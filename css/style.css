@@ -41,3 +41,29 @@ nav{
 }
 
 /* Jumbo */
+
+.jumbo{
+    width: 70%;
+    margin: 100px 0 0 100px;
+}
+
+.title{
+    position: relative;
+    font-size: 150px;
+    color: rgb(202, 173, 223);
+    font-weight: 700;
+}
+
+.title i{
+    position: absolute;
+    font-size: 70px;
+}
+
+.hello i{ 
+    top: 0;
+    left: 0;
+}
+
+.world{
+    margin-left: 250px;
+}
