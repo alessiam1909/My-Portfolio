@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient( 103deg,  rgba(235,225,188,1) 7.2%, rgba(232,188,234,1) 57.5%, rgba(203,209,244,1) 90.7% );
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.nav-list{
+    width: 50%;
+    margin: 0 auto;
+    list-style-type: none;
+    display: flex;
+    height: 50px;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list a:hover{
+    color: rgb(159, 115, 185);
+}
+
+/* Jumbo */
