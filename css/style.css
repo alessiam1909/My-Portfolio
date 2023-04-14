@@ -16,7 +16,7 @@ body {
 
 header {
     width: 100vw;
-    height: 100vh;
+    height: 1080px;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
@@ -110,11 +110,16 @@ nav {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
 }
 
+.container-scroll {
+    margin-top: 50px;
+    height: 150px;
+    position: relative;
+}
+
 .scroll {
     color: white;
     font-size: 17px;
     font-weight: 600;
-    margin-top: 50px;
 }
 
 .arrow-down {
@@ -266,7 +271,7 @@ nav {
 
 .lang {
     width: calc(100% /3 -60px);
-    margin: 30px;
+    margin: 30px 10px;
     height: 100px;
 }
 
@@ -288,11 +293,12 @@ nav {
 .button-slider {
     position: absolute;
     color: white;
+    text-align: center;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background-color: rgba(71, 20, 112, 0.8);
-    padding: 10px;
+    padding: 13px;
     border: none;
 }
 
@@ -332,4 +338,120 @@ footer {
     align-items: center;
     font-size: 14px;
     color: white;
+}
+
+/* media queries */
+
+@media screen and (max-width:1550px) {
+
+    .nav-list,
+    .container-main {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:1140px) {
+
+    .container-linguaggi {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .icone-linguaggi,
+    .icone-linguaggi-2 {
+        margin: 20px 100px;
+    }
+}
+
+@media screen and (max-width:820px) {
+    .title {
+        font-size: 50px;
+    }
+
+    .icone-linguaggi,
+    .icone-linguaggi-2 {
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    .nav-list,
+    .container-main {
+        width: 95%;
+    }
+
+    .container-slider {
+        width: 100%;
+        margin: 80px 0;
+    }
+
+    .sx {
+        top: -12%;
+        left: 45.5%;
+    }
+
+    .dx {
+        top: 102%;
+        left: 45.5%;
+    }
+}
+
+@media screen and (max-width:574px) {
+
+    .title {
+        font-size: 40px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        height: 145px;
+        padding: 0;
+    }
+
+    .w-100 {
+        height: 270px;
+    }
+
+    .carousel-item img {
+        object-fit: cover;
+    }
+
+    .sx {
+        top: -20%;
+        left: 45.5%;
+    }
+}
+
+@media screen and (max-width:514px) {
+    .container-img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .jumbo {
+        width: 95%;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+
+    .icone-linguaggi,
+    .icone-linguaggi-2 {
+        margin: 10px 0;
+    }
+
+    .lang {
+        width: calc(100% /3);
+        height: 100px;
+    }
+
+    .footer-p {
+        width: 90%;
+    }
 }
