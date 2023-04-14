@@ -446,12 +446,22 @@ footer {
         margin: 10px 0;
     }
 
-    .lang {
-        width: calc(100% /3);
-        height: 100px;
-    }
-
     .footer-p {
         width: 90%;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    .icone-linguaggi,
+    .icone-linguaggi-2 {
+        margin: 10px 0;
+        flex-direction: column;
+    }
+
+    .lang {
+        margin: 10px auto;
+        width: calc(100% / 3);
+        height: 100%;
     }
 }
